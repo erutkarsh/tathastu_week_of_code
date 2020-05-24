@@ -1,0 +1,40 @@
+def isPrime(n):
+    a=2
+    k=n//2
+    while k>=2:
+        if n%a==0:
+            return False
+        a==1
+        k=n//a
+    return True
+def isPalindrome(n):
+    N=str(n)
+    L=len(N)
+     for i in (L//2):
+        if N[i]!=N[L-1-i]:
+            return False
+    return True
+def isOdd(n):
+    if n%2==0:
+        return False
+    return True
+def isArmstrong(n):
+    sum=0
+    temp=n
+    while temp>0:
+        digit=temp%10
+        sum+=digit**3
+        temp//=10
+    if n==sum:
+         return True
+    return False
+def check():
+    number=int(input("Enter the number"))
+    if(isPrime(number)):
+        print(number,"is a prime number")
+    if(isOdd(number)):
+        print(number,"is a odd number")
+    else:
+        print(number,"is a even number")
+    if(isPalindrome(number)):
+        print(number,"is a Palindrome number")
